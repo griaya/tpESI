@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  /* Fondo con degradado aplicado al HTML/body */
+  background: #833AB4;
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); /*lo copie de una web especifica*/
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 15px;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;   
+    font-style: italic;  
+}
+
+#lista-conceptos {
+    max-width: 600px; /* Reducido para forzar 2 columnas de ancho fijo */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.concepto {
+    width: 260px; /* Ancho ideal para que entren 2 por fila */
+    padding: 20px;
+    text-align: center;
+    color: #fff; 
+    border-radius: 10px;      
+    border: 2px solid #000;     
+    background-color:#310d41;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.concepto:hover {
+    transform: translateY(-20px); /* Eleva la caja 20 píxeles hacia arriba */
+    box-shadow: 0 20px 30px #ffffff; /* Le añade una sombra blanca para dar profundidad */
+}
+
+.concepto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+footer {
+    background-color: #4a7bbb; 
+    color: #000;               
+    text-align: center;        
+    padding: 20px;            
+    margin-top: 40px;          
+    font-size: 1.2rem;         
+    border-top: 2px solid #000;
+}
